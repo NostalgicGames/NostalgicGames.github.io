@@ -14,13 +14,12 @@
 <body>
 	<section class="header">
 		<nav>
-			<a href="index.html"><img src="images/logo/NOSTALGIC logo3.png"></a>
+			<a href=""><img src="images/logo/NOSTALGIC logo3.png"></a>
 			<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="">HOME</a></li>
 					<li><a href="">ABOUT</a></li>
-					<li><a href="">GAMES</a></li>
 					<li><a href="">CONTACT</a></li>
 				</ul>
 			</div>
@@ -29,28 +28,54 @@
 		<div class="text-box">
 			<h1>Feelin' Nostalgic</h1>
 			<p>Welcome to Nostalgic Games</p>
-			<a href="" class="hero-btn">See Our Games</a>
+			<a class="hero-btn" id="seeOurGamesButton">See Our Games</a>
 		</div>
 		
 	</section>
 	
-	<section class="games">
+	<!-- Games -->
+	
+	<section class="games" id="games">
 		<h1>Our Games</h1>
-		<p>Ohhhh yeeeeaaaaa</p>
 		
 		<div class="row">
-			<div class="game-col">
-				
-			</div>
+			<a><div class="game">
+				<img src="images/musicalbricks/logo.png">
+				<div class="game-info">
+					<h3>Musical Bricks</h3>
+					<p>The greatest brick breaker to come to your phone</p>
+				</div>
+			</div></a>
+		</div>
+		
+		<h1>Coming Soon</h1>
+		
+		<div class="row">
+			<a><div class="game">
+				<img src="images/cap/logo.jpg">
+				<div class="game-info">
+					<h3>Cap or No Cap</h3>
+					<p>Can you tell what is true anymore?<br>Exciting trivia that you and your friends can face off against each other with!! You will want to play non-stop</p>
+				</div>
+			</div></a>
+			<a><div class="game">
+				<img src="images/spaceward/logo.jpg">
+				<div class="game-info">
+					<h3>Spaceward</h3>
+					<p>Adventure to other planets and protect your own in this 2D shooter game that will show you the fun of intensity</p>
+				</div>
+			</div></a>
 		</div>
 	</section>
+	
+	<!-- Privacy -->
 	
 	<section class="privacy">
 		<p><a href="privacy">Privacy Policy</a></p>
 	</section>
 	
-	
 	<!--- JavaScript for Toggle Menu-->
+	
 	<script>
 		var navLinks = document.getElementById("navLinks");
 		function showMenu() {
@@ -59,6 +84,19 @@
 		function hideMenu() {
 			navLinks.style.right = "-200px";
 		}
+		
+		function scrollTo(element) {
+			window.scroll({
+				behavior: "smooth",
+				left: 0,
+				top: element.offsetTop
+			});
+		}
+		var seeOurGamesButton = document.getElementById("seeOurGamesButton");
+		var gamesSection = document.getElementById("games")
+		seeOurGamesButton.addEventListener("click", () => {
+			scrollTo(gamesSection);
+		});
 	</script>
 </body>
 </html>

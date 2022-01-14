@@ -8,7 +8,7 @@
 	min-height: 100vh;
 	width: 100%;
 	/*background-color: rgb(41, 41, 41); */
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/background/Portland\ Sunrise\ A.png);
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/background/Portland\ Sunrise\ A.jpg);
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -117,18 +117,18 @@ nav .fa{
 	}
 }
 
-
 /* Games */
 
 .games{
 	width: 80%;
 	margin: auto;
 	text-align: center;
-	padding-top: 100px;
+	transition: 1s;
 }
 h1{
 	font-size: 36px;
 	font-weight: 600;
+	padding-top: 100px;
 }
 p{
 	color: #777;
@@ -138,10 +138,56 @@ p{
 	padding: 10px;
 }
 
+.row{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
 
+.row a{
+	/*background: #ffefdf;*/
+	flex-basis: 40%;
+	border-radius: 5px;
+	padding: 12px 12px;
+	box-sizing: border-box;
+	transition: 0.25s;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+.row a:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.game{
+	display: flex;
+	align-items: flex-start;
+}
+.game img{
+	width: 100px;
+	border-radius: 20px;
+	display: inline-block;
+}
+.game-info{
+	text-align: left;
+	padding-left: 20px;
+	display: inline-block;
+}
+.game-info h3{
+	color: #000;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.game-info p{
+	line-height: auto;
+	padding: 0;
+}
 
+@media(max-width: 700px) {
+	.row{
+		flex-direction: column;
+	}
+}
 
-
+/* Privacy */
 
 .privacy{
 	width: 80%;
@@ -150,13 +196,11 @@ p{
 	padding-top: 100px;
 	padding-bottom: 20px;
 }
-p{
+p a{
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 22px;
 	padding: 10px;
-}
-p a{
 	color: #777;
 	text-decoration: none;
 }
