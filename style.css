@@ -21,6 +21,15 @@
 	background-size: cover;
 	position: relative;
 }
+.musicalBricksHeader{
+	min-height: 40vh;
+	width: 100%;
+	/*background-color: rgb(41, 41, 41); */
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/musicalbricks/featuregraphic.png);
+	background-position: 50% 45%;
+	background-size: cover;
+	position: relative;
+}
 
 nav{
 	display: flex;
