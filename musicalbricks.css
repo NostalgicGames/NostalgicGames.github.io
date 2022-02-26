@@ -305,9 +305,17 @@ body {
 .app-store {
 	width: 50%;
 	text-align: center;
+	margin-bottom: 1%;
 }
-.app-store a, .app-store img {
+.app-store a {
 	width: inherit;
+} 
+.app-store img {
+	width: inherit;
+	height: auto;
+}
+.apple a img {
+	padding: 4%;
 }
 @media(max-width: 700px) {
 	.app-store {
