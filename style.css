@@ -228,8 +228,14 @@ p a{
 	color: #666;
 	text-decoration: none;
 }
+p a:hover {
+	text-decoration: underline;
+}
 
 .privacypage{
 	padding: 20px;
 	color: #666;
+}
+.privacypage p a {
+	padding: 0;
 }
